@@ -1,9 +1,9 @@
   #include <iostream>
     #include <string>
-    using namespace std;
+
     int main (){
-        string name;
-        cin.ignore();
-        getline(cin, name);
-        cout << "Hello world from " << name << "\n";
+        std::string name;
+        std::cin.ignore();
+        std::getline(std::cin, name);
+        std::cout << "Hello world from " << name << std::endl;
     }
