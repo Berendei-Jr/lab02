@@ -7,4 +7,4 @@
         std::getline(std::cin, name);
         std::cout << "Hello world from " << name << std::endl;
     }
-// Hi guys!
+// Hi pals!
