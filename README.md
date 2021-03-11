@@ -80,11 +80,17 @@ int main (){
 Deleted branch patch1 (was 1699890).
 
 PART 3
-> $ git branch patch2
-> $ git checkout patch2
-      Необходимо установить утилиту clang-format командой $ sudo apt install clang-format
+
+> $ git branch patch2 (создаем новую ветку)
+
+> $ git checkout patch2 (переключаемся на нее)
+
+Необходимо 	установить утилиту clang-format командой $ sudo apt install clang-format
+
 > $ clang-format -style=Mozilla hello_world.cpp
+
 > $ git commit -m"style=Mozilla" -a
+> 
 > $ git 	push origin patch2
 
 Berendei-Jr wants to merge 1 commit into main from patch2
@@ -94,10 +100,17 @@ This branch has conflicts that must be resolved
 Скриншот 4
 
 > $ git fetch origin
+ 
 > $ git checkout -b patch2 origin/patch2
+
 > $ git merge main
+
 > $ git checkout main
+
 > $ git merge --no-ff patch2
+
 > $ git commit -m"comment" -a
+
 > $ git pull origin main
+
 > $ git push origin main
