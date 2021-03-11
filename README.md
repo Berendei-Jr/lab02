@@ -1,33 +1,36 @@
 PART 1
-1) Cоздаю пустой репозиторий lab02
-2) >$ nano README.md
-   >$ git add README.md
-   >$ git commit -m"Start"
-   > $ git push origin main
+1) Cоздаю пустой репозиторий lab02 (через сайт)
+2) $ nano README.md  (создаю файл и открываю его редактирование через встроенный в терминал текстовый редактор “nano”)
+$ git add README.md (добавляю созданный файл в репозиторий)
+$ git commit -m"Start" (добавляю комментарий)
+$ git push origin main (отсылаю изменения на глобальный репозиторий)
 
-3) > $ nano hello_world.cpp
-       #include <iostream>
-    using namespace std;
-    int main (){
-        cout << "Hello world"<<endl;
-    }
+
+3) $ nano hello_world.cpp (создаю файл с раширением .срр)
+#include <iostream> 
+   using namespace std;   
+int main (){        
+cout << "Hello world"<<endl;    
+}
 Добавляю этот файл в локальную копию репозитория: $ git add hello_world.cpp 
 Закоммичиваю изменения с сообщением: $ git commit -m"added ‘hello_world’"
 Изменяю исходный код так:
-     > $ nano hello_world.cpp
-    #include <iostream>
-    #include <string>
-    using namespace std;
-    int main (){
-        string name;
-        cin.ignore();
-        getline(cin, name);
-        cout << "Hello world from " << name << "\n";
-    }
-Закоммичиваю новую версию программы.
-      > $ git commit -m"change in hello_world" -a
-Не т необходимости добавлять повторно hello_world с помощью git add, потому что мы его уже добавили, и этот файл теперь будет отслеживаться автоматически, однако коммитить нужно с опцией -а.
-4) > $ git push origin main
+
+$ 	nano hello_world.cpp
+   #include <iostream>   
+#include <string>   
+using namespace std;   
+int main (){    
+ string name;   
+cin.ignore();   
+ getline(cin, name);    
+ cout << "Hello world from " << name << "\n";   
+}
+Закоммичиваю новую версию программы. 
+
+$ 	git commit -m"change in hello_world" -a
+Нет необходимости добавлять повторно hello_world с помощью git add, потому что мы его уже добавили, и этот файл теперь будет отслеживаться автоматически, однако коммитить нужно с опцией -а.
+4) $ git push origin main
 
 Доказательство: скриншот 1 (в папке скриншоты)
 
