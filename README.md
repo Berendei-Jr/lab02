@@ -38,6 +38,7 @@ PART 2
 1) > $ git branch patch1
 2) 
    > $ git checkout patch1
+   > 
 branch - создает новую ветку
 checkout - переключает на нужную ветку
 > $ nano hello_world.cpp
