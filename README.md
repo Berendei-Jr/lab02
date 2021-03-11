@@ -82,8 +82,8 @@ int main (){
 
 Скриншот 3
 
-     > $ git branch -D patch1
-     > 
+> $ git branch -D patch1
+  
 Deleted branch patch1 (was 1699890).
 
 PART 3
