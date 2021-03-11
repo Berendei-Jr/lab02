@@ -36,6 +36,7 @@ $ 	git commit -m"change in hello_world" -a
 
 PART 2
 1) > $ git branch patch1
+2) 
    > $ git checkout patch1
 branch - создает новую ветку
 checkout - переключает на нужную ветку
